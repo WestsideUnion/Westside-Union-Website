@@ -3,6 +3,7 @@ import type React from "react"
 import type { ComponentProps, ReactNode } from "react"
 import { motion, useReducedMotion } from "framer-motion"
 import { FacebookIcon, InstagramIcon, LinkedinIcon, YoutubeIcon } from "lucide-react"
+import { CrunchbaseIcon } from "@/components/crunchbase-icon"
 import Image from "next/image"
 
 interface FooterLink {
@@ -48,7 +49,7 @@ const footerLinks: FooterSection[] = [
     links: [
       { title: "Instagram", href: "#", icon: InstagramIcon },
       { title: "LinkedIn", href: "#", icon: LinkedinIcon },
-      { title: "Crunchbase", href: "#", icon: FacebookIcon }, // Placeholder icon
+      { title: "Crunchbase", href: "#", icon: CrunchbaseIcon },
     ],
   },
 ]

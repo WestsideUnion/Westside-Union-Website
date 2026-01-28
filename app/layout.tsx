@@ -30,6 +30,8 @@ export const metadata: Metadata = {
   },
 }
 
+import { BackToTop } from "@/components/back-to-top"
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -42,6 +44,7 @@ export default function RootLayout({
           <NavigationTransition />
           <PageTransition>{children}</PageTransition>
         </Suspense>
+        <BackToTop />
         <SpeedInsights />
       </body>
     </html>

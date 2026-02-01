@@ -8,12 +8,10 @@ const clientLogos = [
     { name: "Kodak", src: "/images/clients/f582e758.svg", width: 120, height: 48 },
     { name: "HP", src: "/images/clients/hp.webp", width: 60, height: 60 },
     { name: "NKG", src: "/images/clients/nkg.webp", width: 100, height: 50 },
-    { name: "La Gloria", src: "/images/clients/la-gloria.webp", width: 120, height: 60 },
-    { name: "TIES", src: "/images/clients/ties.webp", width: 100, height: 50 },
-    { name: "BAN", src: "/images/clients/ban.webp", width: 80, height: 50 },
-    { name: "CoPlus", src: "/images/clients/coplusinc.webp", width: 100, height: 50 },
+    { name: "La Gloria", src: "/images/clients/LaGloriaLogotipo.png", width: 120, height: 60 },
+    { name: "Bando", src: "/images/clients/bando.webp", width: 100, height: 50 },
+    { name: "RightTime", src: "/images/clients/righttime-logo-BE_Gd4kD.png", width: 120, height: 40 },
     { name: "Logo1", src: "/images/clients/logo1.webp", width: 100, height: 50 },
-    { name: "Logo2", src: "/images/clients/logo-2.webp", width: 100, height: 50 },
 ]
 
 export function LogoTicker() {
@@ -36,7 +34,7 @@ export function LogoTicker() {
                 {duplicatedLogos.map((logo, index) => (
                     <div
                         key={`${logo.name}-${index}`}
-                        className="flex-shrink-0 flex items-center justify-center h-12 md:h-16 min-w-[80px] md:min-w-[120px] grayscale brightness-0 invert opacity-30 hover:opacity-100 hover:grayscale-0 hover:brightness-100 hover:invert-0 transition-all duration-500"
+                        className="flex-shrink-0 flex items-center justify-center h-12 md:h-16 min-w-[80px] md:min-w-[120px] grayscale brightness-0 invert opacity-20 hover:opacity-100 hover:grayscale-0 hover:brightness-100 hover:invert-0 transition-all duration-500"
                     >
                         <Image
                             src={logo.src}

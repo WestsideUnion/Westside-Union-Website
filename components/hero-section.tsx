@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react"
 import { siteContent } from "@/lib/site-content"
-import { ArrowRight, Globe, Shield, Zap } from "lucide-react"
+import { ArrowRight } from "lucide-react"
+import { LogoTicker } from "./logo-ticker"
 
 export function HeroSection() {
     const [isVisible, setIsVisible] = useState(false)
@@ -73,29 +74,15 @@ export function HeroSection() {
                     </a>
                 </div>
 
-                {/* Trusted By / Trust Bar */}
+                {/* Trusted By / Client Logo Ticker */}
                 <div
                     className={`pb-12 transition-all duration-1000 delay-800 ${isVisible ? "opacity-100" : "opacity-0"
                         }`}
                 >
-                    <p className="text-white/40 text-sm font-medium mb-8 uppercase tracking-widest italic font-serif">
+                    <p className="text-white/40 text-sm font-medium mb-6 uppercase tracking-widest italic font-serif">
                         {home.hero.trustedByText}
                     </p>
-                    <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-                        {/* Dynamic icons for abstract companies */}
-                        <div className="flex items-center gap-2 text-white">
-                            <Globe className="w-8 h-8" />
-                            <span className="text-lg font-bold">Global Solutions</span>
-                        </div>
-                        <div className="flex items-center gap-2 text-white">
-                            <Shield className="w-8 h-8" />
-                            <span className="text-lg font-bold">Secure Partners</span>
-                        </div>
-                        <div className="flex items-center gap-2 text-white">
-                            <Zap className="w-8 h-8" />
-                            <span className="text-lg font-bold">InnoTech</span>
-                        </div>
-                    </div>
+                    <LogoTicker />
                 </div>
             </div>
         </section>

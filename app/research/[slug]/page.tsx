@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { GlassmorphismNav } from "@/components/glassmorphism-nav"
 import { Footer } from "@/components/footer"
 import Aurora from "@/components/Aurora"
@@ -22,7 +23,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     return (
         <div className="min-h-screen bg-black overflow-hidden relative text-white">
             <div className="fixed inset-0 w-full h-full">
-                <Aurora colorStops={["#111827", "#1f2937", "#000000"]} amplitude={0.5} blend={0.6} speed={0.2} />
+                <Aurora colorStops={["#475569", "#64748b", "#475569"]} amplitude={0.5} blend={0.6} speed={0.2} />
             </div>
 
             <GlassmorphismNav />
@@ -41,6 +42,20 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                         <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-8">
                             {post.title}
                         </h1>
+
+                        {/* Cover Image */}
+                        {post.image && (
+                            <div className="w-full relative aspect-[21/9] rounded-2xl overflow-hidden mb-8 border border-white/10 shadow-2xl">
+                                <Image
+                                    src={post.image}
+                                    alt={post.title}
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                />
+                            </div>
+                        )}
+
                         <p className="text-xl text-gray-300 leading-relaxed border-l-4 border-blue-500 pl-6 italic">
                             {post.excerpt}
                         </p>

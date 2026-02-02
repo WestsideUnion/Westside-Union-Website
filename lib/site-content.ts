@@ -116,9 +116,10 @@ export const siteContent = {
       name: "Rapid ID",
       tagline: "Transform Your AI-powered Photo ID Service Into a Revenue Machine.",
       description: "Enterprise-grade ID photo automation: background removal, precision cropping, compliance validation across 100+ international formats.",
-      features: ["Reduce processing time by 90%", "Eliminate rejections", "Cloud-based", "Compliance validation"],
-      target: "Print shops, photo studios, courier services, travel agencies.",
       image: "/images/products/rapid-id.jpg",
+      target: "Print shops, photo studios, courier services, travel agencies.",
+      features: ["Automated Background Removal", "Precision Cropping", "Compliance Validation"],
+      category: "Services & Retail",
     },
     {
       id: "ws-wallet",
@@ -127,6 +128,7 @@ export const siteContent = {
       description: "Apple & Google Wallet compatible passes (loyalty cards, coupons, e-gift cards) with no app download required.",
       features: ["Real-time location-aware offers", "No app download needed", "High engagement rates"],
       image: "/images/products/ws-wallet.jpg",
+      category: "Financial",
     },
     {
       id: "digital-billboard",
@@ -135,6 +137,8 @@ export const siteContent = {
       description: "Real-time adaptability (weather/events/traffic), hyperlocal targeting, and analytics/ROI tracking.",
       examples: "+25% restaurant foot traffic (Queen Street), +40% event attendance (Yonge–Dundas Square).",
       image: "/images/products/digital-billboard.jpg",
+      features: ["Real-time ad adaptability", "Hyperlocal audience targeting", "Detailed ROI analytics"],
+      category: "Utilities",
     },
   ],
   work: [
@@ -185,24 +189,28 @@ export const siteContent = {
       title: "Agentic AI and the Soul of Business",
       date: "Dec 06, 2025",
       excerpt: "Exploring how autonomous AI agents are reshaping business operations and decision-making processes.",
+      image: "/images/research/agentic-ai.png",
     },
     {
       slug: "beyond-chatbots",
       title: "Beyond Chatbots: How to Build Real Customer Relationships",
       date: "Nov 19, 2025",
       excerpt: "Moving past simple conversational interfaces to create deep, value-driven customer interactions in the AI era.",
+      image: "/images/research/chatbots.png",
     },
     {
       slug: "ai-overload-automation-wrong",
       title: "The AI Overload: Why Most Companies Are Getting Automation Wrong",
       date: "Feb 20, 2025",
       excerpt: "Automation shouldn't just be about speed—it should be about strategic efficiency. Here's where many go wrong.",
+      image: "/images/research/ai-overload.png",
     },
     {
       slug: "ai-revolutionizing-businesses",
       title: "How AI is Revolutionizing Businesses of All Sizes",
       date: "Feb 17, 2025",
       excerpt: "From small startups to large enterprises, AI is leveling the playing field and creating new opportunities for growth.",
+      image: "/images/research/ai-revolution.png",
     },
   ],
   contact: {

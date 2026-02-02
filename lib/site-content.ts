@@ -5,9 +5,9 @@ export const siteContent = {
     description: "A Technology-Driven Business Solutions Provider delivering integrated technology, design, and consulting services.",
     locations: ["Toronto", "San Francisco"],
     social: {
-      instagram: "#",
-      linkedin: "#",
-      crunchbase: "#",
+      instagram: "https://www.instagram.com/westsideunion/",
+      linkedin: "https://www.linkedin.com/company/westside-union/",
+      crunchbase: "https://www.crunchbase.com/organization/westside-union",
     },
     contactEmail: "info@westside-union.com", // Placeholder
   },

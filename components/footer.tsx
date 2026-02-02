@@ -17,6 +17,8 @@ interface FooterSection {
   links: FooterLink[]
 }
 
+import { siteContent } from "@/lib/site-content"
+
 const footerLinks: FooterSection[] = [
   {
     label: "Services",
@@ -33,7 +35,7 @@ const footerLinks: FooterSection[] = [
       { title: "About Us", href: "/about" },
       { title: "Contact", href: "/contact" },
       { title: "Careers", href: "#" },
-      { title: "Privacy Policy", href: "#" },
+      { title: "Privacy Policy", href: "/privacy" },
     ],
   },
   {
@@ -47,9 +49,9 @@ const footerLinks: FooterSection[] = [
   {
     label: "Connect",
     links: [
-      { title: "Instagram", href: "#", icon: InstagramIcon },
-      { title: "LinkedIn", href: "#", icon: LinkedinIcon },
-      { title: "Crunchbase", href: "#", icon: CrunchbaseIcon },
+      { title: "Instagram", href: siteContent.brand.social.instagram, icon: InstagramIcon },
+      { title: "LinkedIn", href: siteContent.brand.social.linkedin, icon: LinkedinIcon },
+      { title: "Crunchbase", href: siteContent.brand.social.crunchbase, icon: CrunchbaseIcon },
     ],
   },
 ]

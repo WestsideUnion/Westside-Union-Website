@@ -5,20 +5,12 @@ import { Footer } from "@/components/footer"
 import Aurora from "@/components/Aurora"
 import { siteContent } from "@/lib/site-content"
 import { motion } from "framer-motion"
-import { IdCard, Wallet, Tv, CheckCircle, ArrowRight } from "lucide-react"
+import { CheckCircle, ArrowRight } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function ProductsPage() {
     const { products } = siteContent
-
-    const getProductIcon = (id: string) => {
-        switch (id) {
-            case "rapid-id": return <IdCard className="w-12 h-12 text-blue-400" />
-            case "ws-wallet": return <Wallet className="w-12 h-12 text-green-400" />
-            case "digital-billboard": return <Tv className="w-12 h-12 text-purple-400" />
-            default: return <IdCard className="w-12 h-12 text-white" />
-        }
-    }
 
     return (
         <div className="min-h-screen bg-black overflow-hidden relative text-white">
@@ -29,64 +21,84 @@ export default function ProductsPage() {
             <GlassmorphismNav />
 
             <main className="relative z-10 pt-32 pb-20 px-6 md:px-12 max-w-7xl mx-auto">
-                <section className="text-center mb-24">
+                <section className="text-center mb-16">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Products</h1>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto">
                         Scalable, AI-driven solutions designed to automate and optimize your business operations.
                     </p>
                 </section>
 
-                <div className="space-y-32">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {products.map((product, index) => (
-                        <motion.section
+                        <motion.div
                             key={product.id}
-                            initial={{ opacity: 0, y: 40 }}
+                            initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, margin: "-100px" }}
-                            transition={{ duration: 0.6 }}
-                            className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-12 items-center`}
+                            viewport={{ once: true }}
+                            transition={{ delay: index * 0.1 }}
+                            className="bg-zinc-900/40 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 transition-all duration-300 group flex flex-col h-full"
                         >
-                            <div className="flex-1">
-                                <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl aspect-[4/3] flex items-center justify-center relative overflow-hidden group">
-                                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 group-hover:from-blue-500/20 group-hover:to-purple-500/20 transition-colors" />
-                                    {getProductIcon(product.id)}
-                                    <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-white/5 rounded-full blur-3xl pointer-events-none" />
-                                </div>
+                            {/* Image Section - Timeline Style relative h-48 w-full overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500 */}
+                            <div className="relative h-48 w-full overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500 flex-shrink-0">
+                                {product.image && (
+                                    <>
+                                        <Image
+                                            src={product.image}
+                                            alt={product.name}
+                                            fill
+                                            className="object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-transparent to-transparent opacity-60" />
+                                    </>
+                                )}
                             </div>
 
-                            <div className="flex-1 space-y-6">
-                                <div className="inline-block px-3 py-1 rounded-full bg-blue-500/20 text-blue-400 text-sm font-medium border border-blue-500/30">
+                            <div className="p-6 flex flex-col flex-grow">
+                                <span className="text-sm font-black tracking-widest text-blue-500 uppercase mb-2 block">
                                     {product.name}
-                                </div>
-                                <h2 className="text-3xl md:text-4xl font-bold">{product.tagline}</h2>
-                                <p className="text-gray-400 text-lg leading-relaxed">{product.description}</p>
+                                </span>
+                                <h3 className="text-2xl font-bold mb-3 leading-tight">{product.tagline}</h3>
+                                <p className="text-gray-400 mb-6 text-sm leading-relaxed flex-grow">
+                                    {product.description}
+                                </p>
 
                                 {product.features && (
-                                    <ul className="space-y-3">
-                                        {product.features.map((feature, i) => (
-                                            <li key={i} className="flex items-center gap-3 text-gray-300">
-                                                <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
-                                                {feature}
+                                    <ul className="space-y-2 mb-6">
+                                        {product.features.slice(0, 3).map((feature, i) => (
+                                            <li key={i} className="flex items-start text-xs text-gray-300">
+                                                <CheckCircle className="w-3.5 h-3.5 text-green-400 mr-2 flex-shrink-0 mt-0.5" />
+                                                <span className="leading-tight">{feature}</span>
                                             </li>
                                         ))}
                                     </ul>
                                 )}
 
-                                {product.examples && (
-                                    <div className="p-4 bg-white/5 rounded-xl border-l-4 border-green-400">
-                                        <p className="text-sm text-gray-300 italic">Example Impact: {product.examples}</p>
-                                    </div>
-                                )}
-
-                                <div className="pt-4">
-                                    <Link href="/contact" className="inline-flex items-center gap-2 text-white bg-white/10 hover:bg-white/20 px-6 py-3 rounded-full transition-colors border border-white/10">
+                                <div className="mt-auto pt-4 border-t border-white/5">
+                                    <Link
+                                        href="/contact"
+                                        className="inline-flex items-center gap-2 text-sm text-white hover:text-blue-400 transition-colors"
+                                    >
                                         Request Demo <ArrowRight className="w-4 h-4" />
                                     </Link>
                                 </div>
                             </div>
-                        </motion.section>
+                        </motion.div>
                     ))}
                 </div>
+
+                <section className="mt-20 text-center">
+                    <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-white/10 rounded-3xl p-12 backdrop-blur-xl">
+                        <h2 className="text-3xl font-bold mb-4">Ready to elevate your business?</h2>
+                        <p className="text-gray-300 mb-8">We tailor our engagement models to fit your specific stages of growth.</p>
+                        <div className="flex flex-wrap justify-center gap-4">
+                            {["Brand + Website Overlay", "Product MVP Build", "AI Integration", "DOOH Campaign"].map((tag) => (
+                                <span key={tag} className="px-4 py-2 bg-white/10 rounded-full text-sm font-medium border border-white/5">
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                </section>
             </main>
 
             <Footer />

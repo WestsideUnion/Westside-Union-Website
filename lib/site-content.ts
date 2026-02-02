@@ -118,6 +118,7 @@ export const siteContent = {
       description: "Enterprise-grade ID photo automation: background removal, precision cropping, compliance validation across 100+ international formats.",
       features: ["Reduce processing time by 90%", "Eliminate rejections", "Cloud-based", "Compliance validation"],
       target: "Print shops, photo studios, courier services, travel agencies.",
+      image: "/images/products/rapid-id.jpg",
     },
     {
       id: "ws-wallet",
@@ -125,6 +126,7 @@ export const siteContent = {
       tagline: "Next-gen Loyalty & Engagement",
       description: "Apple & Google Wallet compatible passes (loyalty cards, coupons, e-gift cards) with no app download required.",
       features: ["Real-time location-aware offers", "No app download needed", "High engagement rates"],
+      image: "/images/products/ws-wallet.jpg",
     },
     {
       id: "digital-billboard",
@@ -132,6 +134,7 @@ export const siteContent = {
       tagline: "Smart, Adaptive Advertising",
       description: "Real-time adaptability (weather/events/traffic), hyperlocal targeting, and analytics/ROI tracking.",
       examples: "+25% restaurant foot traffic (Queen Street), +40% event attendance (Yonge–Dundas Square).",
+      image: "/images/products/digital-billboard.jpg",
     },
   ],
   work: [

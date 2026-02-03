@@ -4,11 +4,13 @@ import { GlassmorphismNav } from "@/components/glassmorphism-nav"
 import { Footer } from "@/components/footer"
 import Aurora from "@/components/Aurora"
 import { siteContent } from "@/lib/site-content"
+import { aboutContent } from "./content"
 import { motion } from "framer-motion"
 import Image from "next/image"
 
 export default function AboutPage() {
-    const { about, brand } = siteContent
+    const { brand } = siteContent
+    const about = aboutContent
 
     return (
         <div className="min-h-screen bg-black overflow-hidden relative text-white">

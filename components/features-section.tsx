@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import Link from "next/link"
 
 const AnimatedChatDemo = ({ isActive }: { isActive: boolean }) => {
   const [messages, setMessages] = useState([
@@ -183,12 +184,12 @@ const AnimatedCalendarDemo = ({ isActive }: { isActive: boolean }) => {
           <div
             key={day}
             className={`w-4 h-4 flex items-center justify-center rounded transition-all duration-300 ${day === selectedDate
-                ? booked
-                  ? "bg-green-500 text-white scale-110"
-                  : "bg-blue-500 text-white scale-110"
-                : day % 7 === 0 || day % 6 === 0
-                  ? "bg-slate-200 text-slate-400"
-                  : "bg-white text-slate-600 hover:bg-slate-100"
+              ? booked
+                ? "bg-green-500 text-white scale-110"
+                : "bg-blue-500 text-white scale-110"
+              : day % 7 === 0 || day % 6 === 0
+                ? "bg-slate-200 text-slate-400"
+                : "bg-white text-slate-600 hover:bg-slate-100"
               }`}
           >
             {day}
@@ -350,6 +351,62 @@ const AnimatedIntegrationsDemo = ({ isActive }: { isActive: boolean }) => {
   )
 }
 
+const AnimatedCTADemo = ({ isActive }: { isActive: boolean }) => {
+  return (
+    <div className="bg-slate-50 rounded-lg p-4 h-32 flex items-center justify-center gap-3">
+      <Link
+        href="/products"
+        className={`flex-1 min-w-0 bg-white p-3 rounded-lg shadow-sm border border-slate-200 flex flex-col items-center justify-center gap-2 transition-all duration-700 ${isActive ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
+          } hover:border-blue-400 hover:shadow-md cursor-pointer group/saas`}
+      >
+        <div className="w-8 h-8 shrink-0 overflow-hidden rounded-full bg-blue-100 flex items-center justify-center group-hover/saas:bg-blue-500 transition-colors duration-300">
+          <svg
+            className="w-4 h-4 text-blue-600 group-hover/saas:text-white transition-colors duration-300"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+            />
+          </svg>
+        </div>
+        <span className="text-[10px] font-semibold text-slate-700 group-hover/saas:text-blue-600 text-center leading-tight">
+          Explore SaaS
+        </span>
+      </Link>
+
+      <Link
+        href="/contact"
+        className={`flex-1 min-w-0 bg-white p-3 rounded-lg shadow-sm border border-slate-200 flex flex-col items-center justify-center gap-2 transition-all duration-700 delay-100 ${isActive ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"
+          } hover:border-indigo-400 hover:shadow-md cursor-pointer group/custom`}
+      >
+        <div className="w-8 h-8 shrink-0 overflow-hidden rounded-full bg-indigo-100 flex items-center justify-center group-hover/custom:bg-indigo-500 transition-colors duration-300">
+          <svg
+            className="w-4 h-4 text-indigo-600 group-hover/custom:text-white transition-colors duration-300"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+            />
+          </svg>
+        </div>
+        <span className="text-[10px] font-semibold text-slate-700 group-hover/custom:text-indigo-600 text-center leading-tight">
+          Custom Solutions
+        </span>
+      </Link>
+    </div>
+  )
+}
+
 const features = [
   {
     title: "Product Strategy & UX",
@@ -373,6 +430,12 @@ const features = [
     title: "Operational Consulting",
     description: "Optimizing business operations through data-driven insights, legal alignment, and growth strategies.",
     demo: AnimatedLeadsDemo, // Using Leads demo as "Growth/Optimization"
+    size: "large",
+  },
+  {
+    title: "Start Your Journey",
+    description: "Ready to move forward? Choose the path that fits your vision—browse our products or build something unique.",
+    demo: AnimatedCTADemo,
     size: "large",
   },
 ]

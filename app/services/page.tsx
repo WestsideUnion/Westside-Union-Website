@@ -3,18 +3,18 @@
 import { GlassmorphismNav } from "@/components/glassmorphism-nav"
 import { Footer } from "@/components/footer"
 import Aurora from "@/components/Aurora"
-import { siteContent } from "@/lib/site-content"
+import { servicesContent } from "./content"
 import { motion } from "framer-motion"
-import { Palette, Cpu, Play, TrendingUp } from "lucide-react"
+import { Palette, Cpu, Play, TrendingUp, Megaphone } from "lucide-react"
 
 export default function ServicesPage() {
-    const { services } = siteContent
+    const services = servicesContent
 
     const getIcon = (category: string) => {
         switch (category) {
             case "Design": return <Palette className="w-8 h-8 text-pink-400" />
             case "Development": return <Cpu className="w-8 h-8 text-blue-400" />
-            case "Multimedia": return <Play className="w-8 h-8 text-purple-400" />
+            case "Marketing": return <Megaphone className="w-8 h-8 text-purple-400" />
             case "Consulting": return <TrendingUp className="w-8 h-8 text-green-400" />
             default: return <Cpu className="w-8 h-8 text-white" />
         }

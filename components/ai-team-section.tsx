@@ -1,13 +1,11 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { siteContent } from "@/lib/site-content"
 import { Globe, Lightbulb, Rocket, Users } from "lucide-react"
 
 export function AITeamSection() {
   const sectionRef = useRef<HTMLElement>(null)
   const [isVisible, setIsVisible] = useState(false)
-  const { home } = siteContent
 
   useEffect(() => {
     const observer = new IntersectionObserver(

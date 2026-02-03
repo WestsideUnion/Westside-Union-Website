@@ -4,12 +4,14 @@ import { GlassmorphismNav } from "@/components/glassmorphism-nav"
 import { Footer } from "@/components/footer"
 import Aurora from "@/components/Aurora"
 import { siteContent } from "@/lib/site-content"
+import { contactContent } from "./content"
 import { motion } from "framer-motion"
 import { Mail, MapPin } from "lucide-react"
 import Script from "next/script"
 
 export default function ContactPage() {
-    const { contact, brand } = siteContent
+    const { brand } = siteContent
+    const contact = contactContent
 
     return (
         <div className="min-h-screen bg-black overflow-hidden relative text-white">

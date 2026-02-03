@@ -4,12 +4,12 @@ import { useState } from "react"
 import { GlassmorphismNav } from "@/components/glassmorphism-nav"
 import { Footer } from "@/components/footer"
 import Aurora from "@/components/Aurora"
-import { siteContent } from "@/lib/site-content"
+import { workContent } from "./content"
 import { motion, AnimatePresence } from "framer-motion"
 import { ArrowUpRight } from "lucide-react"
 
 export default function WorkPage() {
-    const { work } = siteContent
+    const work = workContent
     const [selectedCategory, setSelectedCategory] = useState("All")
 
     // Extract unique categories dynamically

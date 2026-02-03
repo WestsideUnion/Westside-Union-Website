@@ -3,13 +3,13 @@
 import { GlassmorphismNav } from "@/components/glassmorphism-nav"
 import { Footer } from "@/components/footer"
 import Aurora from "@/components/Aurora"
-import { siteContent } from "@/lib/site-content"
+import { researchContent } from "./content"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { Calendar, ArrowRight } from "lucide-react"
 
 export default function ResearchPage() {
-    const { research } = siteContent
+    const research = researchContent
 
     return (
         <div className="min-h-screen bg-black overflow-hidden relative text-white">

@@ -4,14 +4,14 @@ import { useState } from "react"
 import { GlassmorphismNav } from "@/components/glassmorphism-nav"
 import { Footer } from "@/components/footer"
 import Aurora from "@/components/Aurora"
-import { siteContent } from "@/lib/site-content"
+import { productsContent } from "./content"
 import { motion, AnimatePresence } from "framer-motion"
 import { CheckCircle, ArrowRight } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
 export default function ProductsPage() {
-    const { products } = siteContent
+    const products = productsContent
     const [selectedCategory, setSelectedCategory] = useState("All")
 
     const categories = ["All", "Manufacturing", "Financial", "Services & Retail", "Utilities"]

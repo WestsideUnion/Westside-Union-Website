@@ -2,19 +2,19 @@ import Image from "next/image"
 import { GlassmorphismNav } from "@/components/glassmorphism-nav"
 import { Footer } from "@/components/footer"
 import Aurora from "@/components/Aurora"
-import { siteContent } from "@/lib/site-content"
+import { researchContent } from "../content"
 import { Calendar, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 
 export function generateStaticParams() {
-    return siteContent.research.map((post) => ({
+    return researchContent.map((post) => ({
         slug: post.slug,
     }))
 }
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
-    const post = siteContent.research.find((p) => p.slug === params.slug)
+    const post = researchContent.find((p) => p.slug === params.slug)
 
     if (!post) {
         notFound()

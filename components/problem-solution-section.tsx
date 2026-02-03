@@ -1,13 +1,13 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { siteContent } from "@/lib/site-content"
+import { homeContent } from "@/app/content"
 import { Target, TrendingUp, Users } from "lucide-react"
 
 export function ProblemSolutionSection() {
   const sectionRef = useRef<HTMLElement>(null)
   const [isVisible, setIsVisible] = useState(false)
-  const { home } = siteContent
+  const { pillars, stats } = homeContent
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -67,7 +67,7 @@ export function ProblemSolutionSection() {
           className={`grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-20 transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
             }`}
         >
-          {home.pillars.map((pillar, index) => (
+          {pillars.map((pillar, index) => (
             <div key={index} className="group h-full">
               <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 sm:p-8 h-full hover:bg-white/10 transition-all duration-500 hover:border-white/30 flex flex-col items-center text-center">
                 <div className="mb-6 p-4 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors">
@@ -85,7 +85,7 @@ export function ProblemSolutionSection() {
           className={`grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-16 transition-all duration-1000 delay-600 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
         >
-          {home.stats.map((stat, i) => (
+          {stats.map((stat, i) => (
             <div key={i} className="text-center bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-4 sm:p-6 hover:bg-white/10 transition-all duration-300">
               <div className="text-2xl sm:text-3xl font-bold text-white mb-2">{stat.value}</div>
               <p className="text-white/70 text-xs sm:text-sm">{stat.label}</p>

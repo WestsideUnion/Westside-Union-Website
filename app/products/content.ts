@@ -1,0 +1,31 @@
+export const productsContent = [
+    {
+        id: "rapid-id",
+        name: "Rapid ID",
+        tagline: "Transform Your AI-powered Photo ID Service Into a Revenue Machine.",
+        description: "Enterprise-grade ID photo automation: background removal, precision cropping, compliance validation across 100+ international formats.",
+        image: "/images/products/rapid-id.jpg",
+        target: "Print shops, photo studios, courier services, travel agencies.",
+        features: ["Automated Background Removal", "Precision Cropping", "Compliance Validation"],
+        category: "Services & Retail",
+    },
+    {
+        id: "ws-wallet",
+        name: "WS Wallet Pass",
+        tagline: "Next-gen Loyalty & Engagement",
+        description: "Apple & Google Wallet compatible passes (loyalty cards, coupons, e-gift cards) with no app download required.",
+        features: ["Real-time location-aware offers", "No app download needed", "High engagement rates"],
+        image: "/images/products/ws-wallet.jpg",
+        category: "Financial",
+    },
+    {
+        id: "digital-billboard",
+        name: "Digital Billboard Ad Solutions",
+        tagline: "Smart, Adaptive Advertising",
+        description: "Real-time adaptability (weather/events/traffic), hyperlocal targeting, and analytics/ROI tracking.",
+        examples: "+25% restaurant foot traffic (Queen Street), +40% event attendance (Yonge–Dundas Square).",
+        image: "/images/products/digital-billboard.jpg",
+        features: ["Real-time ad adaptability", "Hyperlocal audience targeting", "Detailed ROI analytics"],
+        category: "Utilities",
+    },
+]

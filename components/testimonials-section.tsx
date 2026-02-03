@@ -32,44 +32,44 @@ export function TestimonialsSection() {
 
   const testimonials = [
     {
-      text: "We went from missing 70% of after-hours inquiries to capturing every single lead. Customer bookings increased 50% in the first month.",
-      name: "Mike Rodriguez",
-      role: "Business Owner",
+      text: "Automating patient intake has reduced administrative overhead by 40%. Our staff can now focus entirely on patient care while the AI handles scheduling and preliminary questions with empathy.",
+      name: "Dr. Elena Rostova",
+      role: "Chief Medical Officer",
     },
     {
-      text: "We spend so much less time thinking about lead response because of the instant engagement Westside Union offers us.",
-      name: "Sarah Chen",
-      role: "Sales Manager",
+      text: "Security and trust are paramount in finance. Westside Union's AI agents navigate complex compliance requirements while delivering instant, personalized financial guidance to our premium clients.",
+      name: "Marcus Sterling",
+      role: "VP of Digital Banking",
     },
     {
-      text: "With Westside Union, our conversion rates increased by 85% and boosted our weekend revenue by 40%.",
-      name: "Michael Torres",
-      role: "General Manager",
+      text: "Our brand voice is everything. The AI didn't just automate replies; it learned our style. It suggests outfits and handles returns with the same chic, helpful tone as our top stylists.",
+      name: "Isabella Vane",
+      role: "Creative Director",
     },
     {
-      text: "The AI handles customer questions 24/7, so we never miss a potential sale. Our team can focus on closing deals instead of answering basic questions.",
-      name: "Jennifer Walsh",
-      role: "Operations Director",
+      text: "Scaling support was our biggest bottleneck. Now, we resolve 70% of inquiries instantly. The AI integrates perfectly with our dev tools to escalate technical issues without friction.",
+      name: "Liam O'Connor",
+      role: "Head of Customer Success",
     },
     {
-      text: "Customer satisfaction scores improved dramatically since implementing Westside Union. Clients love the instant responses and personalized recommendations.",
-      name: "David Kim",
-      role: "Customer Experience Manager",
+      text: "In this market, speed is the deal-breaker. The AI creates instant property briefings and books viewings 24/7. We've closed five additional multi-million dollar deals this quarter alone.",
+      name: "Sarah Jenkins",
+      role: "Luxury Real Estate Broker",
     },
     {
-      text: "Our retail store saw a 60% increase in qualified leads. The chatbot handles product inquiries perfectly while we focus on in-person customers.",
-      name: "Lisa Thompson",
-      role: "Store Manager",
+      text: "Managing inventory inquiries across 50 locations was a nightmare. The AI now correlates stock levels with customer queries in real-time, driving foot traffic exactly where the product is available.",
+      name: "Kenji Sato",
+      role: "Director of Retail Ops",
     },
     {
-      text: "Property inquiries are handled instantly now. We've closed 3x more deals since implementing Westside Union's AI assistant.",
-      name: "James Wilson",
-      role: "Real Estate Broker",
+      text: "We needed a solution that could handle global logistics coordination. The multi-lingual capabilities allow us to support drivers and vendors in their native languages simultaneously.",
+      name: "Amara Okeke",
+      role: "Logistics Coordinator",
     },
     {
-      text: "Hotel bookings increased 45% with 24/7 availability. Guests get immediate answers about amenities and availability.",
-      name: "Maria Garcia",
-      role: "Hospitality Manager",
+      text: "Legal client intake requires precision. The AI screens potential cases with incredible accuracy, ensuring our attorneys only spend time on qualified leads that fit our firm's profile.",
+      name: "Robert Thorne",
+      role: "Managing Partner",
     },
   ]
 

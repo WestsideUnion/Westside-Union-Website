@@ -121,6 +121,10 @@ export default function ProductsPage() {
                     </AnimatePresence>
                 </div>
 
+                <div className="mt-12 text-center">
+                    <p className="text-gray-500 italic text-lg animate-pulse">More products coming and updating soon...</p>
+                </div>
+
                 <section className="mt-20 text-center">
                     <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-white/10 rounded-3xl p-12 backdrop-blur-xl">
                         <h2 className="text-3xl font-bold mb-4">Ready to elevate your business?</h2>

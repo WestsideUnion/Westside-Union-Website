@@ -41,7 +41,7 @@ const footerLinks: FooterSection[] = [
   {
     label: "Work",
     links: [
-      { title: "Portfolio", href: "/work" },
+
       { title: "Products", href: "/products" },
       { title: "Research", href: "/research" },
     ],

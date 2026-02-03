@@ -2,7 +2,7 @@
 import type React from "react"
 import type { ComponentProps, ReactNode } from "react"
 import { motion, useReducedMotion } from "framer-motion"
-import { FacebookIcon, InstagramIcon, LinkedinIcon, YoutubeIcon } from "lucide-react"
+import { FacebookIcon, InstagramIcon, LinkedinIcon, YoutubeIcon, Mic, Radio } from "lucide-react"
 import { CrunchbaseIcon } from "@/components/crunchbase-icon"
 import Image from "next/image"
 
@@ -54,6 +54,13 @@ const footerLinks: FooterSection[] = [
       { title: "Crunchbase", href: siteContent.brand.social.crunchbase, icon: CrunchbaseIcon },
     ],
   },
+  {
+    label: "Podcast",
+    links: [
+      { title: "Spotify", href: siteContent.brand.podcast.spotify, icon: Mic },
+      { title: "Apple", href: siteContent.brand.podcast.apple, icon: Radio },
+    ],
+  },
 ]
 
 export function Footer() {
@@ -78,7 +85,7 @@ export function Footer() {
           </div>
         </AnimatedContainer>
 
-        <div className="mt-10 grid grid-cols-2 gap-8 md:grid-cols-4 xl:col-span-2 xl:mt-0">
+        <div className="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-5 xl:col-span-2 xl:mt-0">
           {footerLinks.map((section, index) => (
             <AnimatedContainer key={section.label} delay={0.1 + index * 0.1}>
               <div className="mb-10 md:mb-0">

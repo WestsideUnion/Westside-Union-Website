@@ -9,6 +9,10 @@ export const siteContent = {
       linkedin: "https://www.linkedin.com/company/westside-union/",
       crunchbase: "https://www.crunchbase.com/organization/westside-union",
     },
+    podcast: {
+      spotify: "https://open.spotify.com/show/1291MBBabo2zC40ZQDu9Vr",
+      apple: "https://podcasts.apple.com/podcast/1850730605",
+    },
     contactEmail: "info@westside-union.com", // Placeholder
   },
   nav: [

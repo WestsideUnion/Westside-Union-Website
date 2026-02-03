@@ -27,17 +27,17 @@ const AnimatedChatDemo = ({ isActive }: { isActive: boolean }) => {
       [
         { text: "Hi! How can I help you today?", isBot: true },
         { text: "I'd like to book an appointment", isBot: false },
-        { text: "Perfect! I can help with that. What service are you interested in?", isBot: true },
+        { text: "Perfect! I can help with that.", isBot: true },
       ],
       [
-        { text: "Hello! I'm available 24/7 to assist you.", isBot: true },
-        { text: "Do you have weekend availability?", isBot: false },
-        { text: "I can check our weekend slots for you.", isBot: true },
+        { text: "Bonjour! Comment puis-je vous aider ?", isBot: true },
+        { text: "Je voudrais prendre rendez-vous.", isBot: false },
+        { text: "Parfait ! Je peux vous aider.", isBot: true },
       ],
       [
-        { text: "Good evening! How may I assist you?", isBot: true },
-        { text: "I need help with pricing", isBot: false },
-        { text: "I'd be happy to provide pricing information right away!", isBot: true },
+        { text: "¡Hola! ¿Cómo puedo ayudarte hoy?", isBot: true },
+        { text: "Me gustaría programar una cita", isBot: false },
+        { text: "¡Perfecto! Yo puedo ayudarte.", isBot: true },
       ],
     ]
 
@@ -409,26 +409,26 @@ const AnimatedCTADemo = ({ isActive }: { isActive: boolean }) => {
 
 const features = [
   {
-    title: "Product Strategy & UX",
-    description: "Transforming abstract ideas into tangible, user-centric product strategies and visually stunning interfaces.",
-    demo: AnimatedChatDemo, // Using Chat demo as metaphor for "Interaction/UX"
+    title: "Omnichannel AI Chatbots",
+    description: "Engage your global audience seamlessly with intelligent, context-aware agents that communicate fluently in multiple languages across all platforms.",
+    demo: AnimatedChatDemo,
     size: "large",
   },
   {
-    title: "Custom Software & AI",
-    description: "Building robust, scalable software solutions and integrating cutting-edge AI to automate complex processes.",
-    demo: AnimatedIntegrationsDemo, // Using Integrations demo for "System Architecture"
+    title: "Seamless Ecosystem Integration",
+    description: "Our AI engine integrates natively with your existing tech stack—connecting CRMs, calendars, and communication tools into a unified, automated workflow.",
+    demo: AnimatedIntegrationsDemo,
     size: "medium",
   },
   {
-    title: "Multimedia & Visuals",
-    description: "Creating immersive experiences through DOOH advertising, product visualization, and high-end VFX.",
-    demo: AnimatedPhoneDemo, // Using Audio/Visual metaphor (Phone ring) -> maybe stretch, but keeps motion
+    title: "Autonomous Voice AI Agents",
+    description: "Scale your communication with hyper-realistic voice agents that handle inbound support and outbound outreach with human-like precision.",
+    demo: AnimatedPhoneDemo,
     size: "medium",
   },
   {
-    title: "Operational Consulting",
-    description: "Optimizing business operations through data-driven insights, legal alignment, and growth strategies.",
+    title: "Effortless Operations Monitoring",
+    description: "Simplify how you operate and monitor your business with AI-driven insights that provide real-time clarity and control over your daily execution.",
     demo: AnimatedLeadsDemo, // Using Leads demo as "Growth/Optimization"
     size: "large",
   },

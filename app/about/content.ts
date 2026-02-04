@@ -23,7 +23,7 @@ export const aboutContent = {
             year: "2015",
             title: "Project Bio Union: The AI Health Pivot",
             description: "Venturing into medical-grade innovation, Westside Union launched Project Leap M (Bio Union), developing smart garments for real-time cardiac monitoring. This breakthrough combined ECG tracking with automated reporting to streamline patient management and doctor follow-ups. This era initiated our deep research into machine learning and AI—technologies that have since been integrated into every solution we build to drive predictive, data-driven outcomes.",
-            image: "/images/timeline/leap-m.webp"
+            image: "/images/timeline/bio-union.jpg"
         },
         {
             year: "2016",
@@ -41,7 +41,7 @@ export const aboutContent = {
             year: "2018",
             title: "Blockchain Advocacy & Regulatory Leadership",
             description: "Building on research and community involvement dating back to 2014, Westside Union solidified its role as a leader in the digital asset space. In 2018, founder Jacky Ho was invited as a founding member of the Taiwan Blockchain Self-Regulatory Organization (SRO). Drawing on years of deep research into Blockchain and Cryptocurrency, he actively shaped regulatory frameworks to foster a more secure and innovative environment for emerging Web3 startups.",
-            image: "/images/timeline/blockchain.webp"
+            image: "/images/timeline/blockchain.jpg"
         },
         {
             year: "2021",

@@ -1,5 +1,5 @@
 export const aboutContent = {
-    summary: "Founded in 2009 as a design firm specializing in branding, UI/UX, and visual storytelling, Westside Union has evolved into a cross-functional solution provider delivering integrated technology, design, and consulting services. We focus on software, hardware, AI, and data-driven innovation, partnering with clients from concept to deployment.",
+    summary: "Established in 2009, Westside Union is a premier AI-driven SaaS venture studio that bridges the gap between complex deep-tech innovation and scalable business growth. What distinguishes our firm is a high-performance integration of premium UI/UX design heritage with 16 years of cross-functional expertise in software architecture, hardware R&D, and emerging technologies. We transcend traditional development by architecting bespoke, intelligent ecosystems tailored for enterprises, retail, and restaurants—delivering autonomous solutions that drive measurable global impact.",
     timeline: [
         {
             year: "2009",

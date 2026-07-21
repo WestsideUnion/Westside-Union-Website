@@ -20,7 +20,7 @@ export const siteContent = {
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Products", href: "/products" },
-
+    { name: "Open Source", href: "/open-source" },
     { name: "Research", href: "/research" },
   ],
 }

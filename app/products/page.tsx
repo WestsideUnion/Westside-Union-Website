@@ -14,7 +14,7 @@ export default function ProductsPage() {
     const products = productsContent
     const [selectedCategory, setSelectedCategory] = useState("All")
 
-    const categories = ["All", "Manufacturing", "Financial", "Services & Retail", "Utilities"]
+    const categories = ["All", "Manufacturing", "Financial", "Services & Retail", "Utilities", "Open Source"]
 
     const filteredProducts = selectedCategory === "All"
         ? products

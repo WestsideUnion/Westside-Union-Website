@@ -28,4 +28,13 @@ export const productsContent = [
         features: ["Real-time ad adaptability", "Hyperlocal audience targeting", "Detailed ROI analytics"],
         category: "Utilities",
     },
+    {
+        id: "open-source-starter",
+        name: "Open Source Starter Template",
+        tagline: "Jumpstart Your Development",
+        description: "A free, open-source Next.js template tailored for high-performance SaaS applications and venture studios. Access it directly on our GitHub.",
+        image: "/images/products/open-source.jpg",
+        features: ["Modern Stack", "Authentication Ready", "Best Practices"],
+        category: "Open Source",
+    },
 ]

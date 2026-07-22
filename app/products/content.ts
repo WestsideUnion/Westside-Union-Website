@@ -28,4 +28,15 @@ export const productsContent = [
         features: ["Real-time ad adaptability", "Hyperlocal audience targeting", "Detailed ROI analytics"],
         category: "Utilities",
     },
+    {
+        id: "artpresso",
+        name: "Artpresso",
+        tagline: "Professional Artwork Pricing Calculator",
+        description: "Calculate fair, transparent artwork prices based on dimensions, experience level, medium, and material costs.",
+        image: "/images/products/artpresso.png",
+        target: "Independent artists, painters, art galleries, creative freelancers.",
+        features: ["Dimension & Medium Pricing", "Material Cost & Multipliers", "Instant Fair Price Calculation"],
+        category: "Services & Retail",
+        url: "https://artpresso.westside-union.com",
+    },
 ]

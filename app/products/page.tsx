@@ -6,7 +6,7 @@ import { Footer } from "@/components/footer"
 import Aurora from "@/components/Aurora"
 import { productsContent } from "./content"
 import { motion, AnimatePresence } from "framer-motion"
-import { CheckCircle, ArrowRight } from "lucide-react"
+import { CheckCircle, ArrowRight, ExternalLink } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -103,10 +103,20 @@ export default function ProductsPage() {
 
                                     <div className="mt-auto pt-4 border-t border-white/5 flex items-center justify-between">
                                         <Link
-                                            href="/contact"
+                                            href={product.url || "/contact"}
+                                            target={product.url ? "_blank" : undefined}
+                                            rel={product.url ? "noopener noreferrer" : undefined}
                                             className="inline-flex items-center gap-2 text-sm text-white hover:text-blue-400 transition-colors"
                                         >
-                                            Request Demo <ArrowRight className="w-4 h-4" />
+                                            {product.url ? (
+                                                <>
+                                                    Visit App <ExternalLink className="w-4 h-4" />
+                                                </>
+                                            ) : (
+                                                <>
+                                                    Request Demo <ArrowRight className="w-4 h-4" />
+                                                </>
+                                            )}
                                         </Link>
 
                                         {product.category && (

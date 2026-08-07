@@ -1,5 +1,27 @@
 export const productsContent = [
     {
+        id: "paviqo",
+        name: "Paviqo",
+        tagline: "Automotive AI Lead Conversion & Recovery",
+        description: "AI-driven automotive CRM that automatically captures, qualifies, and recovers dealership leads across WhatsApp and digital channels.",
+        image: "/images/products/paviqo.png",
+        target: "Auto dealerships, sales teams, vehicle service centers.",
+        features: ["Automated Lead Qualification", "24/7 AI Lead Recovery", "Instant Vehicle Feed Sync"],
+        category: "Services & Retail",
+        url: "https://www.paviqo.com",
+    },
+    {
+        id: "nexus-ai",
+        name: "Nexus AI",
+        tagline: "Managed AI Assistant for Business Owners",
+        description: "An intelligent, managed business assistant operating across WhatsApp and email to manage inquiries, reviews, and daily operations.",
+        image: "/images/products/nexus.png",
+        target: "Local business owners, restaurants, salons, agencies, trade services.",
+        features: ["WhatsApp & Email Integration", "Review & Inquiry Automation", "Human-in-the-Loop Approval"],
+        category: "Services & Retail",
+        url: "https://nexus.westside-union.com",
+    },
+    {
         id: "rapid-id",
         name: "Rapid ID",
         tagline: "Transform Your AI-powered Photo ID Service Into a Revenue Machine.",

@@ -32,42 +32,42 @@ export function TestimonialsSection() {
 
   const testimonials = [
     {
-      text: "Automating patient intake has reduced administrative overhead by 40%. Our staff can now focus entirely on patient care while the AI handles scheduling and preliminary questions with empathy.",
+      text: "Manual patient intake was overburdening our clinical team. Westside Union implemented an automated intake and scheduling workflow that reduced administrative overhead by 40%, allowing our staff to focus directly on patient care.",
       name: "Dr. Elena Rostova",
       role: "Chief Medical Officer",
     },
     {
-      text: "Security and trust are paramount in finance. Westside Union's AI agents navigate complex compliance requirements while delivering instant, personalized financial guidance to our premium clients.",
+      text: "Balancing strict compliance with immediate customer support was a major hurdle. Westside Union designed a secure, compliant interaction system that provides instant, verified guidance to our clients without compromising security.",
       name: "Marcus Sterling",
       role: "VP of Digital Banking",
     },
     {
-      text: "Our brand voice is everything. The AI didn't just automate replies; it learned our style. It suggests outfits and handles returns with the same chic, helpful tone as our top stylists.",
+      text: "We struggled to scale customer conversations without losing our distinct brand voice. Westside Union tailored an omnichannel solution that understands our aesthetic, assisting customers with inquiries while preserving our brand standards.",
       name: "Isabella Vane",
       role: "Creative Director",
     },
     {
-      text: "Scaling support was our biggest bottleneck. Now, we resolve 70% of inquiries instantly. The AI integrates perfectly with our dev tools to escalate technical issues without friction.",
+      text: "Rapid growth created a support bottleneck that slowed response times. Westside Union connected our tools and automated common workflows, resolving 70% of routine inquiries instantly and cleanly escalating technical issues.",
       name: "Liam O'Connor",
       role: "Head of Customer Success",
     },
     {
-      text: "In this market, speed is the deal-breaker. The AI creates instant property briefings and books viewings 24/7. We've closed five additional multi-million dollar deals this quarter alone.",
+      text: "Delayed responses to inquiries after hours were costing us qualified buyers. Westside Union deployed a 24/7 response and briefing system that books viewings immediately, helping us close five additional deals this quarter.",
       name: "Sarah Jenkins",
       role: "Luxury Real Estate Broker",
     },
     {
-      text: "Managing inventory inquiries across 50 locations was a nightmare. The AI now correlates stock levels with customer queries in real-time, driving foot traffic exactly where the product is available.",
+      text: "Coordinating stock availability across 50 locations created friction for shoppers. Westside Union integrated real-time inventory lookups into our customer channels, directing shoppers straight to available stock.",
       name: "Kenji Sato",
       role: "Director of Retail Ops",
     },
     {
-      text: "We needed a solution that could handle global logistics coordination. The multi-lingual capabilities allow us to support drivers and vendors in their native languages simultaneously.",
+      text: "Language barriers and fragmented communications were slowing logistics coordination. Westside Union implemented a multilingual communication hub that keeps drivers and vendors aligned in real time.",
       name: "Amara Okeke",
       role: "Logistics Coordinator",
     },
     {
-      text: "Legal client intake requires precision. The AI screens potential cases with incredible accuracy, ensuring our attorneys only spend time on qualified leads that fit our firm's profile.",
+      text: "Unqualified inquiries were consuming valuable attorney hours. Westside Union designed a structured intake workflow that screens potential cases accurately, ensuring our team focuses on qualified matters.",
       name: "Robert Thorne",
       role: "Managing Partner",
     },
@@ -90,19 +90,24 @@ export function TestimonialsSection() {
       </div>
 
       <div className="relative max-w-7xl mx-auto">
-        {/* Header Section - Keep as user loves it */}
-        <div className="text-center mb-16 md:mb-32">
+        {/* Header Section */}
+        <div className="text-center mb-16 md:mb-24">
           <div className="fade-in-element opacity-0 translate-y-8 transition-all duration-1000 ease-out inline-flex items-center gap-2 text-white/60 text-sm font-medium tracking-wider uppercase mb-6">
             <div className="w-8 h-px bg-white/30"></div>
             Proven Track Record
             <div className="w-8 h-px bg-white/30"></div>
           </div>
-          <h2 className="fade-in-element opacity-0 translate-y-8 transition-all duration-1000 ease-out text-5xl md:text-6xl lg:text-7xl font-light text-white mb-8 tracking-tight text-balance">
-            Trusted by <span className="font-medium italic">Industry Leaders</span>
+          <h2 className="fade-in-element opacity-0 translate-y-8 transition-all duration-1000 ease-out text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight text-balance">
+            Trusted by <span className="bg-gradient-to-r from-blue-400 to-slate-200 bg-clip-text text-transparent">Industry Leaders</span>
           </h2>
-          <p className="fade-in-element opacity-0 translate-y-8 transition-all duration-1000 ease-out text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
-            Delivering impact across Retail, Healthcare, Fashion, Finance, and beyond.
-          </p>
+          <div className="fade-in-element opacity-0 translate-y-8 transition-all duration-1000 ease-out text-lg sm:text-xl text-white/70 max-w-3xl mx-auto leading-relaxed space-y-3 font-light">
+            <p>
+              Complex business challenges require more than impressive technology. They require a partner who understands the problem, creates a practical solution, and remains focused on the outcome.
+            </p>
+            <p className="text-base text-white/60">
+              See how organizations have used Westside Union solutions to reduce repetitive work, improve customer experiences, and create new opportunities for growth.
+            </p>
+          </div>
         </div>
 
         {/* Testimonials Carousel */}

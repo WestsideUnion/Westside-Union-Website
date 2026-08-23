@@ -11,14 +11,13 @@ interface ServiceCardProps {
 }
 
 export function ServiceCard({ category, description, items, index }: ServiceCardProps) {
-    const getIcon = (category: string) => {
-        switch (category) {
-            case "Design": return <Palette className="w-8 h-8 text-pink-400" />
-            case "Development": return <Cpu className="w-8 h-8 text-blue-400" />
-            case "Marketing": return <Megaphone className="w-8 h-8 text-purple-400" />
-            case "Consulting": return <TrendingUp className="w-8 h-8 text-green-400" />
-            default: return <Cpu className="w-8 h-8 text-white" />
-        }
+    const getIcon = (category: string, idx: number) => {
+        const cat = category.toLowerCase()
+        if (cat.includes("design") || idx === 0) return <Palette className="w-8 h-8 text-pink-400" />
+        if (cat.includes("dev") || cat.includes("engineer") || idx === 1) return <Cpu className="w-8 h-8 text-blue-400" />
+        if (cat.includes("market") || cat.includes("prototype") || cat.includes("product") || idx === 2) return <Megaphone className="w-8 h-8 text-purple-400" />
+        if (cat.includes("consult") || cat.includes("strat") || idx === 3) return <TrendingUp className="w-8 h-8 text-green-400" />
+        return <Palette className="w-8 h-8 text-pink-400" />
     }
 
     return (
@@ -29,7 +28,7 @@ export function ServiceCard({ category, description, items, index }: ServiceCard
             className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:border-white/20 transition-all duration-300 group"
         >
             <div className="mb-6 bg-white/10 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                {getIcon(category)}
+                {getIcon(category, index)}
             </div>
 
             <h2 className="text-2xl font-bold mb-4">{category}</h2>

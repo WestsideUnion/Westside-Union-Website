@@ -1,9 +1,15 @@
+import type { Metadata } from "next"
 import { GlassmorphismNav } from "@/components/glassmorphism-nav"
 import { Footer } from "@/components/footer"
 import Aurora from "@/components/Aurora"
 import { siteContent } from "@/lib/site-content"
 import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+    title: "Privacy Policy | Westside Union",
+    description: "Privacy policy and data protection guidelines for Westside Union.",
+}
 
 export default function PrivacyPage() {
     return (

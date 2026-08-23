@@ -57,9 +57,9 @@ export default function ContactPage() {
                         </div>
 
                         <div className="mt-12 p-6 bg-gradient-to-r from-blue-900/20 to-purple-900/20 rounded-2xl border border-white/10">
-                            <h4 className="font-semibold mb-2">Quick Online Consultancy</h4>
+                            <h4 className="font-semibold mb-2">Focused Consultation</h4>
                             <p className="text-sm text-gray-400">
-                                Need immediate assistance? Our AI-driven support team is available 24/7 to help verify your requirements before booking a call.
+                                Whether you need a ready-to-deploy Westside Union product or a tailored engineering solution, we will help you clarify your requirements and explore the next step.
                             </p>
                         </div>
                     </motion.div>

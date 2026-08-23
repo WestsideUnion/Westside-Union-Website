@@ -35,9 +35,9 @@ export default function OpenSourcePage() {
                         <Github className="w-4 h-4" />
                         Open Source by Westside Union
                     </div>
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6">Open Source</h1>
-                    <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-10">
-                        Free, community-driven projects built by our team. Use them, fork them, contribute to them.
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6">Building useful technology in the open.</h1>
+                    <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
+                        We believe meaningful innovation grows through shared knowledge and practical experimentation. Our open-source work makes selected tools, frameworks, and technical discoveries available to developers, researchers, and product teams.
                     </p>
 
                     {/* Category Filter */}

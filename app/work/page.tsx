@@ -1,8 +1,14 @@
+import type { Metadata } from "next"
 import { GlassmorphismNav } from "@/components/glassmorphism-nav"
 import { Footer } from "@/components/footer"
 import Aurora from "@/components/Aurora"
 import { workContent } from "./content"
 import { WorkGallery } from "@/components/WorkGallery"
+
+export const metadata: Metadata = {
+    title: "Our Work | Westside Union",
+    description: "Explore case studies and working solutions developed by Westside Union across business operations, physical AI, and concept-to-product engineering.",
+}
 
 export default function WorkPage() {
     const work = workContent

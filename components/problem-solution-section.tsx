@@ -51,14 +51,14 @@ export function ProblemSolutionSection() {
             }`}
         >
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm font-medium mb-6">
-            <span className="w-2 h-2 bg-red-400 rounded-full mr-2 animate-pulse"></span>
+            <span className="w-2 h-2 bg-blue-400 rounded-full mr-2 animate-pulse"></span>
             The Challenge
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white text-balance mb-4 sm:mb-6">
-            Complexity & Inefficiency
+            Moving from problem to solution is rarely straightforward.
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white/70 max-w-3xl mx-auto font-light leading-relaxed">
-            Most businesses bleed time and money through fragmented tools, unclear strategy, and manual workflows.
+            Business challenges often cross strategy, operations, technology, product design, and manufacturing. When those capabilities are disconnected, projects take longer, cost more, and struggle to produce meaningful results.
           </p>
         </div>
 

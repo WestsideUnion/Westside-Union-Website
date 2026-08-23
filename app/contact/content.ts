@@ -1,6 +1,6 @@
 export const contactContent = {
-    title: "Start Your Transformation",
-    subtitle: "Ready to scale? Let's talk about your vision.",
+    title: "Discuss Your Challenge",
+    subtitle: "Tell us about your operational problem, technology requirements, or product concept. We will help you identify a practical path forward.",
     fields: {
         name: "Name",
         email: "Email",
@@ -8,6 +8,6 @@ export const contactContent = {
         message: "Message",
     },
     submitParams: {
-        subject: "New Inquiry from Westside Union Website",
+        subject: "New Challenge Inquiry from Westside Union Website",
     },
 }

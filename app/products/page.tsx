@@ -30,9 +30,9 @@ export default function ProductsPage() {
 
             <main className="relative z-10 pt-32 pb-20 px-6 md:px-12 max-w-7xl mx-auto">
                 <section className="text-center mb-16">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Products</h1>
-                    <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-10">
-                        Scalable, AI-driven solutions designed to automate and optimize your business operations.
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6">Products built around real business needs.</h1>
+                    <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+                        Westside Union turns recurring business challenges into practical products. Each product combines our experience in strategy, design, engineering, and implementation to help customers achieve a clear operational outcome.
                     </p>
 
                     {/* Category Menu */}
@@ -54,7 +54,7 @@ export default function ProductsPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[50vh]">
                     <AnimatePresence mode="popLayout">
-                        {filteredProducts.map((product, index) => (
+                        {filteredProducts.map((product) => (
                             <motion.div
                                 key={product.id}
                                 layout
@@ -64,7 +64,7 @@ export default function ProductsPage() {
                                 transition={{ duration: 0.3 }}
                                 className="bg-zinc-900/40 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 transition-all duration-300 group flex flex-col h-full"
                             >
-                                {/* Image Section - Timeline Style */}
+                                {/* Image Section */}
                                 <div className="relative h-48 w-full overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500 flex-shrink-0">
                                     {product.image && (
                                         <>
@@ -83,10 +83,10 @@ export default function ProductsPage() {
                                     <h3 className="text-2xl font-bold mb-2 leading-tight text-white">
                                         {product.name}
                                     </h3>
-                                    <span className="text-sm font-semibold tracking-widest text-blue-500 uppercase mb-3 block">
+                                    <span className="text-sm font-semibold tracking-widest text-blue-400 uppercase mb-3 block">
                                         {product.tagline}
                                     </span>
-                                    <p className="text-gray-400 mb-6 text-sm leading-relaxed flex-grow">
+                                    <p className="text-gray-300 mb-6 text-sm leading-relaxed flex-grow">
                                         {product.description}
                                     </p>
 
@@ -94,7 +94,7 @@ export default function ProductsPage() {
                                         <ul className="space-y-2 mb-6">
                                             {product.features.slice(0, 3).map((feature, i) => (
                                                 <li key={i} className="flex items-start text-sm text-gray-300">
-                                                    <CheckCircle className="w-5 h-5 text-green-400 mr-2 flex-shrink-0" />
+                                                    <CheckCircle className="w-5 h-5 text-emerald-400 mr-2 flex-shrink-0" />
                                                     <span className="leading-tight pt-0.5">{feature}</span>
                                                 </li>
                                             ))}
@@ -106,21 +106,25 @@ export default function ProductsPage() {
                                             href={product.url || "/contact"}
                                             target={product.url ? "_blank" : undefined}
                                             rel={product.url ? "noopener noreferrer" : undefined}
-                                            className="inline-flex items-center gap-2 text-sm text-white hover:text-blue-400 transition-colors"
+                                            className="inline-flex items-center gap-2 text-sm text-white hover:text-blue-400 transition-colors font-medium"
                                         >
-                                            {product.url ? (
+                                            {product.ctaText ? (
+                                                <>
+                                                    {product.ctaText} <ArrowRight className="w-4 h-4" />
+                                                </>
+                                            ) : product.url ? (
                                                 <>
                                                     Visit App <ExternalLink className="w-4 h-4" />
                                                 </>
                                             ) : (
                                                 <>
-                                                    Request Demo <ArrowRight className="w-4 h-4" />
+                                                    Discuss Your Challenge <ArrowRight className="w-4 h-4" />
                                                 </>
                                             )}
                                         </Link>
 
                                         {product.category && (
-                                            <span className="text-xs font-medium text-gray-500 uppercase tracking-wider bg-white/5 px-2 py-1 rounded">
+                                            <span className="text-xs font-medium text-gray-400 uppercase tracking-wider bg-white/5 px-2 py-1 rounded">
                                                 {product.category}
                                             </span>
                                         )}
@@ -131,21 +135,24 @@ export default function ProductsPage() {
                     </AnimatePresence>
                 </div>
 
-                <div className="mt-12 text-center">
-                    <p className="text-gray-500 italic text-lg animate-pulse">More products coming and updating soon...</p>
-                </div>
-
                 <section className="mt-20 text-center">
-                    <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-white/10 rounded-3xl p-12 backdrop-blur-xl">
-                        <h2 className="text-3xl font-bold mb-4">Ready to elevate your business?</h2>
-                        <p className="text-gray-300 mb-8">We tailor our engagement models to fit your specific stages of growth.</p>
-                        <div className="flex flex-wrap justify-center gap-4">
-                            {["Brand + Website Overlay", "Product MVP Build", "AI Integration", "DOOH Campaign"].map((tag) => (
-                                <span key={tag} className="px-4 py-2 bg-white/10 rounded-full text-sm font-medium border border-white/5">
-                                    {tag}
-                                </span>
-                            ))}
-                        </div>
+                    <div className="bg-gradient-to-br from-blue-900/30 to-slate-900/60 border border-white/10 rounded-3xl p-8 sm:p-12 backdrop-blur-xl max-w-4xl mx-auto">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-white">
+                            Your challenge may require more than an off-the-shelf product.
+                        </h2>
+                        <p className="text-gray-300 mb-8 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
+                            Every business operates differently. When an existing product is not enough, Westside Union can design a solution around your workflows, customers, systems, and long-term goals.
+                        </p>
+                        <p className="text-gray-400 mb-8 text-sm max-w-xl mx-auto">
+                            Custom engagements may combine business strategy, digital platforms, advanced AI, physical AI, system integration, product development, and manufacturing expertise.
+                        </p>
+                        <Link
+                            href="/contact"
+                            className="inline-flex items-center gap-2 bg-white text-black font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transition-all hover:scale-105"
+                        >
+                            Discuss Your Challenge
+                            <ArrowRight className="w-5 h-5" />
+                        </Link>
                     </div>
                 </section>
             </main>

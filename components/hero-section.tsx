@@ -1,11 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { homeContent } from "@/app/content";
-
-// Let's actually check the file usage first. But I'm confident.
-// Wait, I can't check the file in this turn.
-// I'll be safer. import { homeContent } from "@/app/content"
+import { homeContent } from "@/app/content"
 
 import { ArrowRight } from "lucide-react"
 import { LogoTicker } from "./logo-ticker"
@@ -70,12 +66,6 @@ export function HeroSection() {
                     >
                         {hero.primaryCta}
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </a>
-                    <a
-                        href="/work"
-                        className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all"
-                    >
-                        {hero.secondaryCta}
                     </a>
                 </div>
 

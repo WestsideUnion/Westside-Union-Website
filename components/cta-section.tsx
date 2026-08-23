@@ -33,22 +33,22 @@ export function CTASection() {
   return (
     <section id="contact" ref={sectionRef} className="relative py-8 px-4 sm:px-6 lg:px-8 mb-32">
       <div className="relative max-w-4xl mx-auto">
-        <div className="fade-in-element opacity-0 translate-y-8 transition-all duration-1000 ease-out text-center p-8 md:p-10 rounded-3xl border border-white/20 bg-[radial-gradient(35%_128px_at_50%_0%,theme(backgroundColor.white/15%),theme(backgroundColor.white/5%))]">
-          <h3 className="text-2xl md:text-3xl lg:text-4xl font-light text-white mb-6 text-balance leading-tight">
-            Ready to bring your{" "}
-            <span className="font-medium italic bg-gradient-to-r from-white to-slate-200 bg-clip-text text-transparent">
-              vision to life
+        <div className="fade-in-element opacity-0 translate-y-8 transition-all duration-1000 ease-out text-center p-8 md:p-12 rounded-3xl border border-white/20 bg-[radial-gradient(35%_128px_at_50%_0%,theme(backgroundColor.white/15%),theme(backgroundColor.white/5%))]">
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 text-balance leading-tight">
+            Ready to turn your challenge into a{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+              working solution
             </span>
             ?
           </h3>
           <p className="text-lg text-white/70 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Partner with Westside Union for integrated technology, design, and consulting solutions.
+            Whether you need one focused capability, an existing Westside Union product, or a fully tailored solution, we will help you identify a practical path forward.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <a href="/contact" className="group inline-flex items-center gap-3 px-8 py-4 md:px-12 md:py-6 bg-gradient-to-r from-white to-slate-100 text-slate-900 rounded-full font-semibold text-base md:text-lg hover:from-slate-50 hover:to-slate-200 transition-all duration-300 hover:scale-105 shadow-2xl">
-              Book a Consultation
-              <ArrowRight className="w-5 h-5 md:w-6 md:h-6 group-hover:translate-x-1 transition-transform duration-200" />
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="/contact" className="group inline-flex items-center gap-3 px-8 py-4 bg-white text-slate-900 rounded-full font-semibold text-base md:text-lg hover:bg-slate-100 transition-all duration-300 hover:scale-105 shadow-2xl">
+              Discuss Your Challenge
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </a>
           </div>
         </div>

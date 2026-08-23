@@ -1,8 +1,8 @@
 export const siteContent = {
   brand: {
     name: "Westside Union",
-    tagline: "You provide the vision. We provide the solution.",
-    description: "A Technology-Driven Business Solutions Provider delivering integrated technology, design, and consulting services.",
+    tagline: "Turn complex business challenges into working solutions.",
+    description: "Westside Union helps organizations solve operational problems and transform promising concepts into market-ready products through strategy, design, engineering, physical AI, and manufacturing experience.",
     locations: ["Toronto", "San Francisco"],
     social: {
       instagram: "https://www.instagram.com/westsideunion/",

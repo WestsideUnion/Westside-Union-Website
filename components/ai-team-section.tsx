@@ -33,23 +33,23 @@ export function AITeamSection() {
 
   const steps = [
     {
-      title: "Discovery & Strategy",
-      description: "We align with your vision through deep market research and customer needs analysis, ensuring a solid foundation.",
+      title: "Discovery & Definition",
+      description: "We clarify the business challenge, customer need, and desired outcome before proposing a solution.",
       icon: Lightbulb
     },
     {
-      title: "Design & Development",
-      description: "Our cross-functional teams in Toronto and San Francisco bring ideas to life with cutting-edge design and engineering.",
+      title: "Design & Engineering",
+      description: "We bring strategy, experience design, technology, and product engineering together around one clear direction.",
       icon: Globe
     },
     {
-      title: "Launch & Scale",
-      description: "We deploy robust solutions and provide ongoing support to help your business grow and adapt.",
+      title: "Prototype & Production",
+      description: "We build, test, and refine the solution with practical implementation and manufacturing requirements in mind.",
       icon: Rocket
     },
     {
-      title: "Partnership First",
-      description: "We view ourselves as an extension of your team, committed to your long-term success.",
+      title: "Launch & Partnership",
+      description: "We support deployment, market introduction, and continued improvement as your needs evolve.",
       icon: Users
     }
   ]
@@ -64,7 +64,7 @@ export function AITeamSection() {
                 }`}
             >
               <Globe className="w-4 h-4" />
-              Global Expertise
+              Our Process
             </div>
 
             <h2
@@ -81,7 +81,7 @@ export function AITeamSection() {
               className={`text-xl text-slate-600 max-w-2xl mx-auto transition-all duration-1000 delay-400 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
             >
-              A collaborative, transparent process designed to deliver exceptional results.
+              A connected process that takes you from business challenge to working solution.
             </p>
           </div>
 

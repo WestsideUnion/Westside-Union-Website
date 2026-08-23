@@ -1,58 +1,58 @@
 export const aboutContent = {
-    summary: "Established in 2009, Westside Union is a premier AI-driven SaaS venture studio that bridges the gap between complex deep-tech innovation and scalable business growth. What distinguishes our firm is a high-performance integration of premium UI/UX design heritage with 16 years of cross-functional expertise in software architecture, hardware R&D, and emerging technologies. We transcend traditional development by architecting bespoke, intelligent ecosystems tailored for enterprises, retail, and restaurants—delivering autonomous solutions that drive measurable global impact.",
+    summary: "Founded in 2009, Westside Union is a business-solutions and concept-to-product partner. We help organizations solve operational challenges, design tailored business systems, and transform promising concepts into market-ready products. Bringing together experience in strategy, design, software engineering, physical AI, prototyping, and manufacturing, we work alongside our clients from initial idea to deployment and continuous improvement.",
     timeline: [
         {
             year: "2009",
             title: "Founded",
-            description: "Westside Union was founded in 2009 as a visionary design studio by two ambitious founders: Jacky Ho (Taiwan) and Jerry Schuman (United States). Inspired by the pioneering spirit of Steve Jobs and Steve Wozniak, they set out to leverage visual and UI/UX design as powerful tools for global problem-solving.",
+            description: "Westside Union was founded in 2009 by Jacky Ho and Jerry Schuman as a multidisciplinary design studio dedicated to solving business and customer-experience problems through clear design and strategic thinking.",
             image: "/images/timeline/founded.webp"
         },
         {
             year: "2013",
-            title: "Rebranding & Expansion",
-            description: "Marking a pivotal shift to SaaS, Westside Union launched an all-in-one, cloud-based, no-code mobile app builder for the restaurant and retail sectors—inspired by the accessibility of Wix and Weebly. This era also saw CTR Strategy Inc. invest in Westside Union Studio, rebranding it as Westside Union Inc. and expanding the team to include VFX artists and specialized engineers for integrated software, hardware, and 3D-printing prototyping services.",
+            title: "Rebranding & Digital Solutions",
+            description: "Westside Union expanded its engineering and technical capabilities, developing cloud-based software platforms and prototyping services across digital and physical domains.",
             image: "/images/timeline/expansion.webp"
         },
         {
             year: "2014",
-            title: "Google Ignite & R&D Innovation",
-            description: "Westside Union joined the Google Ignite program and established its R&D department, focusing on the intersection of hardware, software, and Web3 applications. This era saw the development of Project BitChat, an experimental military-grade encrypted enterprise messenger, alongside Project BizApp—leveraging our deep UI/UX design heritage to lower the barrier for SMEs.",
+            title: "R&D & Systems Engineering",
+            description: "Westside Union established dedicated R&D initiatives, exploring the intersection of secure communication software, hardware prototyping, and distributed system architectures.",
             image: "/images/timeline/saas.webp"
         },
         {
             year: "2015",
-            title: "Project Bio Union: The AI Health Pivot",
-            description: "Venturing into medical-grade innovation, Westside Union launched Project Leap M (Bio Union), developing smart garments for real-time cardiac monitoring. This breakthrough combined ECG tracking with automated reporting to streamline patient management and doctor follow-ups. This era initiated our deep research into machine learning and AI—technologies that have since been integrated into every solution we build to drive predictive, data-driven outcomes.",
+            title: "Project Bio Union & Smart Hardware",
+            description: "Venturing into connected health technology, Westside Union developed smart garment prototypes for cardiac monitoring, integrating sensor data with automated reporting to improve patient care and clinical follow-ups.",
             image: "/images/timeline/bio-union.jpg"
         },
         {
             year: "2016",
-            title: "Spatial Computing & Strategic Growth",
-            description: "Founder Jacky Ho engineered Project LEIA, a record-breaking interactive 3D hologram system for Crystal Galleria in Shanghai. Featuring integrated motion sensors for intuitive gesture tracking, it pushed the boundaries of spatial interaction. This same year, Westside Union began its evolution into a venture studio, initiating a strategy of acquiring and investing in high-potential startup companies.",
+            title: "Spatial Systems & Interactive Displays",
+            description: "The team engineered large-scale interactive display systems with integrated gesture sensors, advancing our capabilities in sensing technologies and physical-world interaction.",
             image: "/images/timeline/leia.webp"
         },
         {
             year: "2017",
-            title: "Global Recognition & Bio Union Expansion",
-            description: "Westside Union achieved international acclaim when our founder was invited to speak at the MEDICA Connected Health Forum—the world's premier medical sector event—to present our research on Project Leap M. This global exposure served as the catalyst for spinning off the project into its own dedicated entity, with Bio Union being founded in San Francisco to lead our North American HealthTech operations.",
+            title: "Global Industry Presentation",
+            description: "Westside Union presented research on connected wearable health technology at the MEDICA Connected Health Forum, leading to expanded health-tech initiatives in San Francisco and Toronto.",
             image: "/images/timeline/global.webp"
         },
         {
             year: "2018",
-            title: "Blockchain Advocacy & Regulatory Leadership",
-            description: "Building on research and community involvement dating back to 2014, Westside Union solidified its role as a leader in the digital asset space. In 2018, founder Jacky Ho was invited as a founding member of the Taiwan Blockchain Self-Regulatory Organization (SRO). Drawing on years of deep research into Blockchain and Cryptocurrency, he actively shaped regulatory frameworks to foster a more secure and innovative environment for emerging Web3 startups.",
+            title: "Distributed Systems & Standards",
+            description: "Building on years of distributed computing research, founder Jacky Ho participated as a founding member of the Taiwan Blockchain Self-Regulatory Organization, contributing to balanced frameworks for emerging technology.",
             image: "/images/timeline/blockchain.jpg"
         },
         {
             year: "2021",
-            title: "Innovating Through the Global Crisis",
-            description: "During Textile Innovation Week by WTiN Innovate Seminars, founder Jacky Ho was invited to present Bio Union's latest breakthrough in smart garment technology. He detailed how our advanced wearable sensors are being utilized to help governments predict and manage the Covid-19 crisis, showcasing the profound impact of data-driven HealthTech on public safety.",
+            title: "Sensor Systems & Public Health",
+            description: "During Textile Innovation Week, the team demonstrated how wearable sensor systems and data monitoring can assist in health tracking and proactive operational response.",
             image: "/images/timeline/textile-innovation.jpg"
         },
         {
             year: "2025",
-            title: "Strategic Expansion & AI Transformation",
-            description: "In 2025, Westside Union underwent a strategic reconstruction, establishing our headquarters in Toronto to lead our North American expansion. Leveraging over 14 years of cross-functional expertise across global projects, we have pivoted our focus toward AI-driven SaaS and bespoke software solutions. Today, we deliver tailor-made, intelligent systems for enterprises, retail, and restaurants, bridging the gap between cutting-edge technology and real-world business scaling.",
+            title: "Strategic Expansion & Physical AI",
+            description: "With headquarters in Toronto and a presence in San Francisco, Westside Union consolidated its 16 years of multidisciplinary expertise into a focused business-solutions and concept-to-product practice, delivering intelligent software platforms, physical AI, and manufacturing-backed solutions.",
             image: "/images/timeline/corp.webp"
         },
     ],

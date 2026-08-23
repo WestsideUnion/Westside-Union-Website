@@ -1,8 +1,14 @@
+import type { Metadata } from "next"
 import { GlassmorphismNav } from "@/components/glassmorphism-nav"
 import { Footer } from "@/components/footer"
 import Aurora from "@/components/Aurora"
 import { researchContent } from "./content"
 import { ResearchList } from "@/components/ResearchList"
+
+export const metadata: Metadata = {
+    title: "Research & Insights | Westside Union",
+    description: "Practical perspectives on business transformation, product development, physical AI, manufacturing, and the technologies shaping how organizations operate.",
+}
 
 export default function ResearchPage() {
     // Sanitize research data for client component (remove non-serializable body)
@@ -19,8 +25,8 @@ export default function ResearchPage() {
             <main className="relative z-10 pt-32 pb-20 px-6 md:px-12 max-w-5xl mx-auto">
                 <section className="text-center mb-20">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6">Research & Insights</h1>
-                    <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-                        Exploring the future of technology, AI, and business transformation.
+                    <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light">
+                        Practical perspectives on business transformation, product development, physical AI, manufacturing, and the technologies shaping how organizations operate.
                     </p>
                 </section>
 

@@ -21,9 +21,9 @@ const caveat = Caveat({
 })
 
 export const metadata: Metadata = {
-  title: "Westside Union - Technology-Driven Business Solutions",
+  title: "Westside Union | Business Solutions, Product Development & Physical AI",
   description:
-    "Westside Union is a cross-functional solution provider delivering integrated technology, design, and consulting services. We provide the solution to your vision.",
+    "Westside Union solves complex business problems and transforms concepts into market-ready products through strategy, design, engineering, physical AI, and manufacturing experience.",
   generator: "v0.app",
   icons: {
     icon: "/logo.png",

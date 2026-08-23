@@ -7,11 +7,11 @@ import { siteContent } from "@/lib/site-content"
 import { AboutTimeline } from "@/components/AboutTimeline"
 
 export const metadata: Metadata = {
-    title: "About Westside Union | AI-Driven SaaS Venture Studio",
-    description: "Learn about Westside Union's 16-year evolution from a design studio to a premier AI-driven SaaS venture studio specializing in bespoke digital architecture for enterprises.",
+    title: "About Westside Union | Business Solutions & Product Development",
+    description: "Learn about Westside Union's 16-year evolution into a business-solutions and concept-to-product partner, uniting strategy, design, physical AI, and manufacturing experience.",
     openGraph: {
-        title: "About Westside Union | AI-Driven SaaS Venture Studio",
-        description: "Exploring 16 years of innovation in design, hardware, and AI-driven SaaS ecosystems.",
+        title: "About Westside Union | Business Solutions & Product Development",
+        description: "16 years of multidisciplinary evolution across strategy, design, engineering, physical AI, and manufacturing.",
         type: "website",
     }
 }
@@ -38,7 +38,7 @@ export default function AboutPage() {
             ],
             "foundingDate": "2009",
             "areaServed": ["Toronto", "San Francisco", "Global"],
-            "knowsAbout": ["AI-driven SaaS", "UI/UX Design", "Venture Studio", "Spatial Computing", "Blockchain"]
+            "knowsAbout": ["Business Solutions", "Concept-to-Product Development", "Physical AI", "Design for Manufacturing", "Software Architecture"]
         }
     }
 

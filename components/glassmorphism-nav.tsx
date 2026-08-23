@@ -126,7 +126,7 @@ export function GlassmorphismNav() {
                   href="/contact"
                   className="relative bg-white hover:bg-gray-50 text-black font-medium px-5 py-2 rounded-full flex items-center transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer group text-sm"
                 >
-                  <span className="mr-2">Book a Consultation</span>
+                  <span className="mr-2">Discuss Your Challenge</span>
                   <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
               </div>
@@ -193,7 +193,7 @@ export function GlassmorphismNav() {
                   }}
                   onClick={() => setIsOpen(false)}
                 >
-                  <span className="mr-2">Book a Consultation</span>
+                  <span className="mr-2">Discuss Your Challenge</span>
                   <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
               </div>

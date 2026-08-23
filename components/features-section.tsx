@@ -375,7 +375,7 @@ const AnimatedCTADemo = ({ isActive }: { isActive: boolean }) => {
           </svg>
         </div>
         <span className="text-[10px] font-semibold text-slate-700 group-hover/saas:text-blue-600 text-center leading-tight">
-          Explore SaaS
+          Explore Our Products
         </span>
       </Link>
 
@@ -400,7 +400,7 @@ const AnimatedCTADemo = ({ isActive }: { isActive: boolean }) => {
           </svg>
         </div>
         <span className="text-[10px] font-semibold text-slate-700 group-hover/custom:text-indigo-600 text-center leading-tight">
-          Custom Solutions
+          Build a Custom Solution
         </span>
       </Link>
     </div>
@@ -410,31 +410,31 @@ const AnimatedCTADemo = ({ isActive }: { isActive: boolean }) => {
 const features = [
   {
     title: "Omnichannel AI Chatbots",
-    description: "Engage your global audience seamlessly with intelligent, context-aware agents that communicate fluently in multiple languages across all platforms.",
+    description: "Give customers fast, helpful answers across web, messaging, and other communication channels. Our context-aware systems adapt to your business and involve your team whenever human judgment is needed.",
     demo: AnimatedChatDemo,
     size: "large",
   },
   {
     title: "Seamless Ecosystem Integration",
-    description: "Our AI engine integrates natively with your existing tech stack—connecting CRMs, calendars, and communication tools into a unified, automated workflow.",
+    description: "Disconnected tools create unnecessary work. We connect your CRM, calendars, messaging channels, and operating systems so information moves where it needs to go.",
     demo: AnimatedIntegrationsDemo,
     size: "medium",
   },
   {
     title: "Autonomous Voice AI Agents",
-    description: "Scale your communication with hyper-realistic voice agents that handle inbound support and outbound outreach with human-like precision.",
+    description: "A missed call should not mean a missed customer. Our voice solutions can handle routine inbound and outbound conversations, understand customer needs, and coordinate the appropriate next step.",
     demo: AnimatedPhoneDemo,
     size: "medium",
   },
   {
     title: "Effortless Operations Monitoring",
-    description: "Simplify how you operate and monitor your business with AI-driven insights that provide real-time clarity and control over your daily execution.",
-    demo: AnimatedLeadsDemo, // Using Leads demo as "Growth/Optimization"
+    description: "See what is happening without searching across multiple systems. AI-assisted monitoring surfaces important activity, exceptions, and follow-ups so your team can respond sooner.",
+    demo: AnimatedLeadsDemo,
     size: "large",
   },
   {
     title: "Start Your Journey",
-    description: "Ready to move forward? Choose the path that fits your vision—browse our products or build something unique.",
+    description: "Choose the path that fits your business: explore a ready-to-deploy Westside Union product or work with us to create a tailored solution.",
     demo: AnimatedCTADemo,
     size: "large",
   },
@@ -449,7 +449,6 @@ export function FeaturesSection() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          console.log("[v0] Features Section is now visible") // Added debug log
           setIsVisible(true)
         }
       },
@@ -507,7 +506,7 @@ export function FeaturesSection() {
               <svg className="w-4 h-4 mr-2 text-slate-600" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H5C3.89 1 3 1.89 3 3V7H1V9H3V15H1V17H3V21C3 22.11 3.89 23 5 23H19C20.11 23 21 22.11 21 21V17H23V15H21V9H23ZM19 9V15H5V9H19ZM7.5 11.5C7.5 10.67 8.17 10 9 10S10.5 10.67 10.5 11.5 9.83 13 9 13 7.5 12.33 7.5 11.5ZM13.5 11.5C13.5 10.67 14.17 10 15 10S16.5 10.67 16.5 11.5 15.83 13 15 13 13.5 12.33 13.5 11.5ZM12 16C13.11 16 14.08 16.59 14.71 17.5H9.29C9.92 16.59 10.89 16 12 16Z" />
               </svg>
-              AI Working 24/7 - Never Miss a Lead
+              AI Working 24/7 — Never Miss an Opportunity
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 text-balance mb-4 sm:mb-6">
               Your AI Team{" "}
@@ -515,10 +514,17 @@ export function FeaturesSection() {
                 Never Sleeps
               </span>
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-3xl mx-auto font-light leading-relaxed">
-              Watch our AI handle real customer interactions around the clock, automatically qualifying leads and
-              booking appointments while you focus on growing your business.
-            </p>
+            <div className="text-base sm:text-lg md:text-xl text-slate-600 max-w-3xl mx-auto font-light leading-relaxed space-y-4">
+              <p>
+                Customers can reach out at any hour, and every unanswered question or missed call can become a lost opportunity.
+              </p>
+              <p>
+                Westside Union builds intelligent systems that help your business respond, coordinate workflows, and monitor operations around the clock—while your team remains in control.
+              </p>
+              <p className="text-sm sm:text-base text-slate-500 font-normal">
+                Use these capabilities individually, combine them through a product such as Project Nexus, or let us tailor a more advanced solution around your business.
+              </p>
+            </div>
           </div>
 
           <div

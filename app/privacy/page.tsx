@@ -21,9 +21,14 @@ export default function PrivacyPage() {
             <GlassmorphismNav />
 
             <main className="relative z-10 pt-32 pb-20 px-6 md:px-12 max-w-4xl mx-auto">
-                <Link href="/" className="inline-flex items-center text-gray-400 hover:text-white mb-8 transition-colors">
-                    <ArrowLeft className="w-4 h-4 mr-2" /> Back to Home
-                </Link>
+                <div className="flex items-center justify-between mb-8 flex-wrap gap-4">
+                    <Link href="/" className="inline-flex items-center text-gray-400 hover:text-white transition-colors">
+                        <ArrowLeft className="w-4 h-4 mr-2" /> Back to Home
+                    </Link>
+                    <Link href="/terms" className="text-sm text-gray-400 hover:text-blue-400 transition-colors">
+                        Terms of Service &rarr;
+                    </Link>
+                </div>
 
                 <article className="prose prose-invert prose-lg max-w-none">
                     <h1 className="text-4xl md:text-5xl font-bold mb-8">Privacy Policy</h1>

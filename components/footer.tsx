@@ -36,6 +36,7 @@ const footerLinks: FooterSection[] = [
       { title: "Contact", href: "/contact" },
       { title: "Careers", href: "#" },
       { title: "Privacy Policy", href: "/privacy" },
+      { title: "Terms of Service", href: "/terms" },
     ],
   },
   {
